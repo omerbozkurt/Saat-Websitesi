@@ -22,6 +22,7 @@ body {
     background: url("saat.png") no-repeat center center;
     background-size: contain; /* Resmi içerikle uyumlu şekilde ölçekler */
     background-position: center center; /* Resmi daima ortalar */
+    overflow: hidden; /* Görselin taşmaması için overflow hidden */
 }
 
 .box .saat,
@@ -89,23 +90,24 @@ body {
 /* Mobile (telefon) için saat boyutunu küçültme */
 @media (max-width: 767px) {
     .box {
-        width: 80vmin;
-        height: 80vmin;
+        width: 70vmin;  /* Ekrana uyumlu küçültme */
+        height: 70vmin;
+        background-size: cover; /* Görseli tam sığdırmak için cover kullan */
     }
 
     .st, .box .saat {
-        width: 50vmin;
-        height: 50vmin;
+        width: 45vmin;
+        height: 45vmin;
     }
 
     .dk, .box .dakika {
-        width: 60vmin;
-        height: 60vmin;
+        width: 55vmin;
+        height: 55vmin;
     }
 
     .sy, .box .saniye {
-        width: 70vmin;
-        height: 70vmin;
+        width: 65vmin;
+        height: 65vmin;
     }
 
     .st::before {
