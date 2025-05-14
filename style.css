@@ -13,14 +13,15 @@ body {
 }
 
 .box {
-    width: 90vmin;
-    height: 90vmin;
-    background: url("saat.png") no-repeat center center;
-    background-size: contain; /* Önemli: tam oturması için */
-    position: relative;
+    width: 90vmin;  /* Ekrana uyumlu olarak genişlik ayarı */
+    height: 90vmin; /* Ekrana uyumlu olarak yükseklik ayarı */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background: url("saat.png") no-repeat center center;
+    background-size: contain; /* Resmi içerikle uyumlu şekilde ölçekler */
+    background-position: center center; /* Resmi daima ortalar */
 }
 
 .box .saat,
