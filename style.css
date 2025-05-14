@@ -85,3 +85,41 @@ body {
     border-radius: 10px;
     z-index: 12;
 }
+
+/* Mobile (telefon) için saat boyutunu küçültme */
+@media (max-width: 767px) {
+    .box {
+        width: 80vmin;
+        height: 80vmin;
+    }
+
+    .st, .box .saat {
+        width: 50vmin;
+        height: 50vmin;
+    }
+
+    .dk, .box .dakika {
+        width: 60vmin;
+        height: 60vmin;
+    }
+
+    .sy, .box .saniye {
+        width: 70vmin;
+        height: 70vmin;
+    }
+
+    .st::before {
+        width: 2vmin;
+        height: 25vmin;
+    }
+
+    .dk::before {
+        width: 1vmin;
+        height: 28vmin;
+    }
+
+    .sy::before {
+        width: 0.5vmin;
+        height: 32vmin;
+    }
+}
