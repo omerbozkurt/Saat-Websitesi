@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4A102A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("saat.png");
+    background-size: cover;
+    position: relative;
+}
+
+.box .saat,
+.box .dakika,
+.box .saniye {
+    position: absolute;
+}
+
+.box .saat,
+.st {
+    width: 300px;
+    height: 300px;
+}
+
+.box .dakika,
+.dk {
+    width: 350px;
+    height: 30px;
+}
+
+.box .saniye,
+.sy {
+    width: 400px;
+    height: 400px;
+}
+
+.st,
+.dk,
+.sy {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.st::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 150px;
+    background: #85193C;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.dk::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 180px;
+    background: #C5172E;
+    border-radius: 10px;
+    z-index: 11;
+}
+
+.sy::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 200px;
+    background: #FCF259;
+    border-radius: 10px;
+    z-index: 12;
+}
+
