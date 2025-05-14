@@ -13,13 +13,14 @@ body {
 }
 
 .box {
-    width: 500px;
-    height: 500px;
+    width: 90vmin;
+    height: 90vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url("saat.png");
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -29,24 +30,26 @@ body {
     position: absolute;
 }
 
+/* Saat kolları genel çerçeve */
 .box .saat,
 .st {
-    width: 300px;
-    height: 300px;
+    width: 60vmin;
+    height: 60vmin;
 }
 
 .box .dakika,
 .dk {
-    width: 350px;
-    height: 30px;
+    width: 70vmin;
+    height: 70vmin;
 }
 
 .box .saniye,
 .sy {
-    width: 400px;
-    height: 400px;
+    width: 80vmin;
+    height: 80vmin;
 }
 
+/* Ortalayıp yukarı hizala */
 .st,
 .dk,
 .sy {
@@ -56,33 +59,35 @@ body {
     position: absolute;
 }
 
+/* Saat kolu */
 .st::before {
     content: "";
     position: absolute;
-    width: 12px;
-    height: 150px;
+    width: 2.4vmin;
+    height: 30vmin;
     background: #85193C;
     border-radius: 10px;
     z-index: 10;
 }
 
+/* Dakika kolu */
 .dk::before {
     content: "";
     position: absolute;
-    width: 6px;
-    height: 180px;
+    width: 1.2vmin;
+    height: 36vmin;
     background: #C5172E;
     border-radius: 10px;
     z-index: 11;
 }
 
+/* Saniye kolu */
 .sy::before {
     content: "";
     position: absolute;
-    width: 3px;
-    height: 200px;
+    width: 0.6vmin;
+    height: 40vmin;
     background: #FCF259;
     border-radius: 10px;
     z-index: 12;
 }
-
